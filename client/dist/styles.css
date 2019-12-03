@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-color: lavenderblush;
 }
@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 70%;
+    height: 100%;
     background-color: forestgreen;
 }
 
@@ -31,17 +31,32 @@
 
 .product-info {
     display: flex;
-    width: 30%;
+    width: 50%;
     height: 100%;
     background-color: gold;
 }
 
 #cart {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 20%;
-    height: 100%;
-    background-color: slategray;
+    height: 1200px;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    background-color: white;
+}
+
+.buybox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 10px 10px 10px;
+    border: solid 1px #dadada;
+    border-radius: 4px;
+    height: auto;
+    width: 100%;
 }
 
 .reviews {
@@ -69,3 +84,90 @@
     background-color: black;
 }
 
+.red-K{
+    color: red;
+}
+
+.green-K{
+    color: green;
+}
+
+#promo-img{
+    width: 50px;
+    height: 35px;
+    background-image: url('./img/promo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.purchase-details-K{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-details{
+    width: 100%;
+}
+
+#price-K, #stock-K{
+    font-size: 17px;
+}
+
+.sold-by-K{
+    width: 100%;
+}
+
+.paid-promo-K{
+    padding: 15px;
+    border: solid 1px #dadada;
+    border-radius: 4px;
+    line-height: 1.35em;
+}
+
+.deliver-to{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    padding: 10px 0 6px 0;
+    border-top: solid 1px #dadada;
+    border-bottom: solid 1px #dadada;
+}
+
+.btn {
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+    border: solid 1px #9c7e31;
+    border-radius: 3px;
+}
+
+#btn-add-cart{
+     background-color: #f0c14b;
+    box-shadow: inset 0 2px 8px white,
+    inset 0 -6px 12px #cda93f;
+ }
+
+#btn-buy-now{
+    background-color: #ed9220;
+    box-shadow: inset 0 2px 8px white,
+    inset 0 -6px 12px #ca7c1b;
+}
+
+#btn-wishlist{
+    background-color: #e7e9ec;
+    border-color: #979aa1;
+    padding: 0 0 0 15px;
+    box-shadow: inset 0 2px 8px white;
+    text-align: left;
+}
+
+#deliver-map{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    background-image: url('./img/maps.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}

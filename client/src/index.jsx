@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PriceAndDetails from './components/PriceAndDetails.jsx';
 import axios from 'axios';
 
 class Cart extends React.Component {
@@ -19,7 +20,9 @@ class Cart extends React.Component {
 
     render() {
         return (
-           <div>BUY MY SHIT</div>
+           <div className={'buybox'}>
+               <PriceAndDetails/>
+           </div>
         );
     }
 }
