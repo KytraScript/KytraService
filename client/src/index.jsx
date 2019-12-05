@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Social from './components/Social.jsx';
+import OtherSellers from './components/OtherSellers.jsx';
 import PriceAndDetails from './components/PriceAndDetails.jsx';
 import axios from 'axios';
 
@@ -13,16 +15,20 @@ class Cart extends React.Component {
         };
     }
 
-    componentDidMount(){
+    componentDidMount() {
 
 
     }
 
     render() {
         return (
-           <div className={'buybox'}>
-               <PriceAndDetails/>
-           </div>
+            <div>
+                <div className={'buybox'}>
+                    <PriceAndDetails/>
+                </div>
+                <Social/>
+                <OtherSellers/>
+            </div>
         );
     }
 }

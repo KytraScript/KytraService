@@ -41,7 +41,6 @@
     flex-direction: row;
     width: 20%;
     height: 1200px;
-    align-items: center;
     font-family: 'PT Sans', sans-serif;
     font-size: 13px;
     background-color: white;
@@ -52,7 +51,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin: 10px 10px 10px 10px;
+    margin: 30px 10px 10px 10px;
     border: solid 1px #dadada;
     border-radius: 4px;
     height: auto;
@@ -111,7 +110,7 @@
     width: 100%;
 }
 
-#price-K, #stock-K{
+#price-K, #stock-K, #other-price{
     font-size: 17px;
 }
 
@@ -170,4 +169,98 @@
     background-image: url('./img/maps.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.other-sellers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 10px 10px 10px;
+    font-size: 13px;
+    line-height: 19px;
+    border: solid 1px #dadada;
+    border-radius: 1px;
+    height: auto;
+    width: 100%;
+}
+
+#other-label {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 10px);
+    align-items: center;
+    padding: 5px;
+    border-bottom: solid 1px #dadada;
+}
+
+.other-price-row {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 8px 0 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seller-K{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: solid 1px #dadada;
+}
+
+.seller-K:last-child{
+    border-bottom: none;
+}
+
+#other-add-cart{
+    width: 78px;
+    height: 20px;
+    border: solid 1px #9c7e31;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 11px;
+    background-color: #f0c14b;
+    box-shadow: inset 0 2px 8px white,
+    inset 0 -6px 12px #cda93f;
+}
+
+.other-product-details{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    padding: 0 5px 0 5px;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+}
+
+.social-media-icon{
+    height: 17px;
+    width: 18px;
+    margin-left: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#mail-share{
+    background-image: url('./img/envelope.png');
+}
+
+#facebook-share{
+    background-image: url('./img/facebook.png');
+}
+
+#twitter-share{
+    background-image: url('./img/twitter.png');
+}
+
+#pinterest-share{
+    background-image: url('./img/pinterest.png');
 }
