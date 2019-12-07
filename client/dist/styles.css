@@ -107,9 +107,9 @@
 #promo-popover{
     display: flex;
     flex-direction: column;
-    right: 68px;
-    bottom: -180px;
-    height: 400px;
+    right: 70px;
+    bottom: -190px;
+    height: 420px;
     width: 450px;
     position: absolute;
     background-color: white;
@@ -118,12 +118,21 @@
     z-index: 399;
 }
 
+.promo-list ul {
+    margin-top: 2px;
+    line-height: 1.3em;
+    font-size: 12px;
+}
+
 .promo-popover-top{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     position: absolute;
     top:-1px;
     left:-1px;
     width: 452px;
-    height: 40px;
+    height: 36px;
     background-color: #e7e9ec;
     border-bottom: solid 1px #cfd2d9;
     border-top-left-radius: 6px;
@@ -132,15 +141,49 @@
     margin-bottom: 5px;
 }
 
+.promo-popover-info{
+    position: relative;
+    top: 34px;
+    padding: 20px;
+}
+
+.promo-popover-info h1 {
+    margin: 0;
+}
+
 .promo-pointer{
     position: absolute;
     height: 24px;
     width: 16px;
     right: -15px;
-    bottom: 180px;
+    bottom: 190px;
     background-image: url('./img/poparrow.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#promo-close-img{
+    width: 8px;
+    height: 8px;
+    background-image: url('./img/cancel.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.promo-close-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 20px;
+    width: 20px;
+    border: solid 1px #959595;
+    border-radius: 3px;
+    margin-right: 12px;
+}
+
+.promo-close-btn:hover{
+    cursor: pointer;
 }
 
 .purchase-details-K{
@@ -184,6 +227,10 @@
     margin-top: 10px;
     border: solid 1px #9c7e31;
     border-radius: 3px;
+}
+
+.btn:hover{
+    cursor: pointer;
 }
 
 #btn-add-cart{
@@ -273,7 +320,10 @@
     display: flex;
     flex-direction: column;
     font-size: 12px;
-    padding: 0 5px 0 5px;
+    line-height: 1.3em;
+    padding: 1px 6px 1px 6px;
+    margin-top: 2px;
+    margin-bottom: 5px;
 }
 
 .social-media{

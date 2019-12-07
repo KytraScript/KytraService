@@ -2,18 +2,28 @@ import React from 'react';
 
 const PriceAndDetails = (props) => {
 
-    function popOver(){
-
-       let unveil = document.getElementById('promo-popover');
-
-       if(unveil.classList.contains('hidden-div')){
-               unveil.classList.remove('hidden-div');
-       } else {
-           unveil.classList.add('hidden-div');
-       }
+    function popOverMouseIn() {
+        let popOver = document.getElementById('promo-popover');
+        if (popOver.classList.contains('hidden-div')) {
+            popOver.classList.remove('hidden-div');
+        }
     }
 
-    //logic with props for render
+    function popOverMouseOut() {
+        let popOver = document.getElementById('promo-popover');
+        if (!popOver.classList.contains('hidden-div')) {
+            popOver.classList.add('hidden-div');
+        }
+    }
+
+    function popOverClickClose() {
+        let popOver = document.getElementById('promo-popover');
+        if (!popOver.classList.contains('hidden-div')) {
+            popOver.classList.add('hidden-div');
+        }
+    }
+
+
     return (
         <div className={'purchase-details-K'}>
             <div className={'pricing-details'}>
@@ -39,17 +49,42 @@ const PriceAndDetails = (props) => {
             <button id={'btn-buy-now'} className={'btn'}>Buy Now</button>
             <br/>
             <div className={'sold-by-K'}>Sold by <a href="#">Amazing Deals (We record SN)</a> and <a href="#">Fulfilled
-                by Amazon</a>.
+                by Gammazon</a>.
             </div>
             <br/>
             <div className={'paid-promo-K'}>
-                <div id={'promo-img'} onMouseOver={popOver} onMouseOut={popOver}><div id={'promo-popover'} className={'hidden-div'}>
-                    <span className={'promo-pointer'}></span>
-                    <div className={'promo-popover-top'}></div><div className={'promo-popover-info'}><h2><b>Gammazon Primed Free Trial</b></h2>
+                <div id={'promo-img'} onMouseOver={popOverMouseIn} onMouseOut={popOverMouseOut}>
+                    <div id={'promo-popover'} className={'hidden-div'}>
+                        <span className={'promo-pointer'}></span>
+                        <div className={'promo-popover-top'}>
+                            <div className={'promo-close-btn'} onClick={popOverClickClose}><span
+                                id={'promo-close-img'}></span></div>
+                        </div>
+                        <div className={'promo-popover-info'}><h1><b>Gammazon Primed Free Trial</b></h1>
+                            <p>Fast, FREE Delivery is available to Primed members. To join, select "Try Gammazon Primed
+                                and start saving today with Fast, FREE Delivery" below the Add to Cart button and
+                                confirm your Primed free trial.</p>
+                            <div className={'promo-list'}><b>Gammazon Primed members enjoy:</b>
+                                <ul>
+                                    <li>Cardmembers earn 5% Back at Gammazon.com with a Primed Credit Card.</li>
+                                    <li>Earn 2% rewards on your debit spending with Primed Reload.</li>
+                                    <li>Unlimited Free Two-Day Delivery</li>
+                                    <li>Instant streaming of thousands of movies and TV episodes with Primed Video</li>
+                                    <li>A Dwindle book to borrow for free each month - with no due dates</li>
+                                    <li>Listen to over 2 million songs and hundreds of playlists</li>
+                                    <li>Free two-hour delivery on groceries (in select cities), including quality fresh
+                                        food and produce
+                                    </li>
+                                </ul>
+                            </div>
+                            <p><b>Important:</b> Your credit card will NOT be charged when you start your free trial or
+                                if you cancel during the trial period. If you're happy with Gammazon Primed, do nothing.
+                                At the end of the free trial, your membership will automatically upgrade to a monthly
+                                membership.</p>
+                        </div>
+                    </div>
                 </div>
-                </div>
-                </div>
-                <b>Enjoy fast, FREE delivery, exclusive deals and Award-Winning movies & TV shows with Prime
+                <b>Enjoy fast, FREE delivery, exclusive deals and Award-Winning movies & TV shows with Primed
                 </b><br/><a href="#">Click here</a> and start saving today with <b>Fast, FREE Delivery</b>
             </div>
             <br/>

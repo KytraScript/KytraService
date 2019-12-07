@@ -6,7 +6,7 @@ const OtherSellers = (props) => {
     //will require mapping over list of other sellers to create divs
     return (
         <div className={'other-sellers'}>
-            <div id={'other-label'}><b>Other Sellers on Amazon</b></div>
+            <div id={'other-label'}><b>Other Sellers on Gammazon</b></div>
             <div className={'seller-K'}>
                 <div className={'other-price-row'}>
                     <div id={'other-price'} className={'red-K'}>$697.99</div>
