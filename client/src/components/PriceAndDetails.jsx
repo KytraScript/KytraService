@@ -1,6 +1,18 @@
 import React from 'react';
 
 const PriceAndDetails = (props) => {
+
+    function popOver(){
+
+       let unveil = document.getElementById('promo-popover');
+
+       if(unveil.classList.contains('hidden-div')){
+               unveil.classList.remove('hidden-div');
+       } else {
+           unveil.classList.add('hidden-div');
+       }
+    }
+
     //logic with props for render
     return (
         <div className={'purchase-details-K'}>
@@ -31,7 +43,12 @@ const PriceAndDetails = (props) => {
             </div>
             <br/>
             <div className={'paid-promo-K'}>
-                <div id={'promo-img'}></div>
+                <div id={'promo-img'} onMouseOver={popOver} onMouseOut={popOver}><div id={'promo-popover'} className={'hidden-div'}>
+                    <span className={'promo-pointer'}></span>
+                    <div className={'promo-popover-top'}></div><div className={'promo-popover-info'}><h2><b>Gammazon Primed Free Trial</b></h2>
+                </div>
+                </div>
+                </div>
                 <b>Enjoy fast, FREE delivery, exclusive deals and Award-Winning movies & TV shows with Prime
                 </b><br/><a href="#">Click here</a> and start saving today with <b>Fast, FREE Delivery</b>
             </div>

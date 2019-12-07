@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import sellers from './data/sellers.js';
 import Social from './components/Social.jsx';
 import OtherSellers from './components/OtherSellers.jsx';
 import PriceAndDetails from './components/PriceAndDetails.jsx';
@@ -10,7 +11,14 @@ class Cart extends React.Component {
         super(props);
 
         this.state = {
-            currentItem: null,
+            currentItem: {
+                productKey: '1',
+                name: 'Nestle Pure Life Purified Water, 16.9 fl oz. Plastic Bottles (12 count)',
+                stock: 70,
+                price: '$2.23'
+            },
+
+            otherSellers: sellers,
 
         };
     }
@@ -20,6 +28,7 @@ class Cart extends React.Component {
 
     }
 
+
     render() {
         return (
             <div>
@@ -27,7 +36,7 @@ class Cart extends React.Component {
                     <PriceAndDetails/>
                 </div>
                 <Social/>
-                <OtherSellers/>
+                <OtherSellers sellers={this.state.otherSellers}/>
             </div>
         );
     }
