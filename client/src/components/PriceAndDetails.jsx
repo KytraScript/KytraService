@@ -23,7 +23,6 @@ const PriceAndDetails = (props) => {
         }
     }
 
-
     return (
         <div className={'purchase-details-K'}>
             <div className={'pricing-details'}>
@@ -39,10 +38,12 @@ const PriceAndDetails = (props) => {
                 <br/>
                 <div id={'stock-K'}><span className={'green-K'}><b>In Stock.</b></span></div>
                 <br/>
-                <form id={'quantity-K'}>
-                    <select>
+                <div id={'quantity-K'}>
+                    <label htmlFor={'quantity'}>Qty: </label>
+                    <select id={'quantity-selector'} name={'quantity'} defaultValue={'1'}>
+                        <option value={'1'}>1</option>
                     </select>
-                </form>
+                </div>
             </div>
             <br/>
             <button id={'btn-add-cart'} className={'btn'}>Add to Cart</button>
