@@ -26,7 +26,7 @@ const PriceAndDetails = (props) => {
     return (
         <div className={'purchase-details-K'}>
             <div className={'pricing-details'}>
-                <div id={'price-K'} className={'red-K'}>$29.95</div>
+                <div id={'price-K'} className={'red-K'}>${props.current.price}</div>
                 <div id={'shipping-K'}>& <b>FREE Shipping.</b> <a href='#'>Details</a></div>
                 <div id={'returns-K'}>& <a href='#'>FREE Returns.</a></div>
                 <br/>
@@ -46,8 +46,9 @@ const PriceAndDetails = (props) => {
                 </div>
             </div>
             <br/>
-            <button id={'btn-add-cart'} className={'btn'}>Add to Cart</button>
-            <button id={'btn-buy-now'} className={'btn'}>Buy Now</button>
+            <button id={'btn-add-cart'} className={'btn'}><span id={'cart-icon'}></span>Add to Cart<span></span></button>
+
+            <button id={'btn-buy-now'} className={'btn'}><span id={'buynow-icon'}></span>Buy Now<span></span></button>
             <br/>
             <div className={'sold-by-K'}>Sold by <a href="#">Amazing Deals (We record SN)</a> and <a href="#">Fulfilled
                 by Gammazon</a>.

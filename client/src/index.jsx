@@ -52,7 +52,7 @@ class Cart extends React.Component {
         return (
             <div>
                 <div className={'buybox'}>
-                    <PriceAndDetails stock={this.state.stock} current={this.state.currentProduct}/>
+                    <PriceAndDetails current={this.state.currentProduct}/>
                 </div>
                 <Social/>
                 <OtherSellers sellers={this.state.otherSellers}/>

@@ -235,12 +235,20 @@
 }
 
 #btn-add-cart{
-     background-color: #f0c14b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0c14b;
     box-shadow: inset 0 2px 8px white,
     inset 0 -6px 12px #cda93f;
  }
 
 #btn-buy-now{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     background-color: #ed9220;
     box-shadow: inset 0 2px 8px white,
     inset 0 -6px 12px #ca7c1b;
@@ -342,6 +350,22 @@
     margin-left: 8px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#cart-icon {
+    display: block;
+    height: 24px;
+    width: 24px;
+    background-image: url('./img/cart.png');
+    background-size: contain;
+}
+
+#buynow-icon{
+    display: block;
+    height: 24px;
+    width: 24px;
+    background-image: url('./img/buynow.png');
+    background-size: contain;
 }
 
 #mail-share{
