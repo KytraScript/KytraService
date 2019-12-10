@@ -27,8 +27,8 @@ const PriceAndDetails = (props) => {
         <div className={'purchase-details-K'}>
             <div className={'pricing-details'}>
                 <div id={'price-K'} className={'red-K'}>${props.current.price}</div>
-                <div id={'shipping-K'}>& <b>FREE Shipping.</b> <a href='#'>Details</a></div>
-                <div id={'returns-K'}>& <a href='#'>FREE Returns.</a></div>
+                <div id={'shipping-K'}>& <b>FREE Shipping</b> <a href='#'>Details</a></div>
+                <div id={'returns-K'}>& <a href='#'>FREE Returns</a></div>
                 <br/>
                 <div id={'shipping-details-K'}><b>Want it Thursday, Dec. 5?</b> Order within <span
                     className={'green-K'}>11 hrs 39 mins</span> and

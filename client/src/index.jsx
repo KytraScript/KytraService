@@ -26,7 +26,7 @@ class Cart extends React.Component {
                 console.log(data.data);
                 this.setState({
                     allProducts: data.data,
-                    currentProduct: data.data[0],
+                    currentProduct: data.data[2],
                 });
             })
             .then( () => {

@@ -40,11 +40,28 @@
     display: none !important;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+a, a:active, a:link, a:visited {
+    text-decoration: none;
+    color: #0066c0;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #c45500;
+}
+
 #cart {
     display: flex;
     flex-direction: row;
-    width: 20%;
-    height: 1200px;
+    width: 300px;
+    height: auto;
     font-family: 'PT Sans', sans-serif;
     font-size: 13px;
     background-color: white;
@@ -222,7 +239,7 @@
 }
 
 .btn {
-    width: 90%;
+    width: 100%;
     height: 30px;
     margin-top: 10px;
     font-size: 13px;
@@ -234,14 +251,13 @@
     cursor: pointer;
 }
 
+
 #btn-add-cart{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #f0c14b;
-    box-shadow: inset 0 2px 8px white,
-    inset 0 -6px 12px #cda93f;
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
  }
 
 #btn-buy-now{
@@ -249,16 +265,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #ed9220;
-    box-shadow: inset 0 2px 8px white,
-    inset 0 -6px 12px #ca7c1b;
+    background: linear-gradient(to bottom,#f6c88f,#ed9220);
 }
 
 #btn-wishlist{
     background-color: #e7e9ec;
     border-color: #979aa1;
     padding: 0 0 0 15px;
-    box-shadow: inset 0 2px 8px white;
+    box-shadow: inset 0 1px 2px white;
     text-align: left;
 }
 
@@ -366,6 +380,16 @@
     width: 24px;
     background-image: url('./img/buynow.png');
     background-size: contain;
+}
+
+#quantity-selector{
+    padding-left: 6px;
+    padding-bottom: 1px;
+    margin-left: 4px;
+    height: 20px;
+    width: 48px;
+    outline: none;
+    background: url('./img/chevron.png') no-repeat right;
 }
 
 #mail-share{
