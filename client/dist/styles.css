@@ -116,7 +116,7 @@ a:hover {
     width: 50px;
     height: 35px;
     position: relative;
-    background-image: url('./img/promo.png');
+    background-image: url('https://gammazon.s3.us-east-2.amazonaws.com/Gammazon/kytra/promo.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -174,7 +174,7 @@ a:hover {
     width: 16px;
     right: -15px;
     bottom: 190px;
-    background-image: url('./img/poparrow.png');
+    background-image: url('https://gammazon.s3.us-east-2.amazonaws.com/Gammazon/kytra/poparrow.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -182,7 +182,7 @@ a:hover {
 #promo-close-img{
     width: 8px;
     height: 8px;
-    background-image: url('./img/cancel.png');
+    background-image: url('https://gammazon.s3.us-east-2.amazonaws.com/Gammazon/kytra/cancel.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -280,7 +280,7 @@ a:hover {
     width: 16px;
     height: 16px;
     margin-right: 8px;
-    background-image: url('./img/maps.png');
+    background-image: url('https://gammazon.s3.us-east-2.amazonaws.com/Gammazon/kytra/maps.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -370,7 +370,7 @@ a:hover {
     display: block;
     height: 24px;
     width: 24px;
-    background-image: url('./img/cart.png');
+    background-image: url('https://gammazon.s3.us-east-2.amazonaws.com/Gammazon/kytra/cart.png');
     background-size: contain;
 }
 
@@ -378,7 +378,7 @@ a:hover {
     display: block;
     height: 24px;
     width: 24px;
-    background-image: url('./img/buynow.png');
+    background-image: url('https://gammazon.s3.us-east-2.amazonaws.com/Gammazon/kytra/buynow.png');
     background-size: contain;
 }
 
@@ -389,21 +389,21 @@ a:hover {
     height: 20px;
     width: 48px;
     outline: none;
-    background: url('./img/chevron.png') no-repeat right;
+    background: url('https://gammazon.s3.us-east-2.amazonaws.com/Gammazon/kytra/chevron.png') no-repeat right;
 }
 
 #mail-share{
-    background-image: url('./img/envelope.png');
+    background-image: url('https://gammazon.s3.us-east-2.amazonaws.com/Gammazon/kytra/envelope.png');
 }
 
 #facebook-share{
-    background-image: url('./img/facebook.png');
+    background-image: url('https://gammazon.s3.us-east-2.amazonaws.com/Gammazon/kytra/facebook.png');
 }
 
 #twitter-share{
-    background-image: url('./img/twitter.png');
+    background-image: url('https://gammazon.s3.us-east-2.amazonaws.com/Gammazon/kytra/twitter.png');
 }
 
 #pinterest-share{
-    background-image: url('./img/pinterest.png');
+    background-image: url('https://gammazon.s3.us-east-2.amazonaws.com/Gammazon/kytra/pinterest.png');
 }

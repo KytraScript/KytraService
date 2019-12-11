@@ -1,16 +1,16 @@
 {
-  "name": "",
-  "version": "",
+  "name": "buy-box",
+  "version": "1.14.0",
   "description": "",
   "author": "Kytra",
   "license": "",
-  "main": "index.js",
+  "main": "server/server.js",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel src/ --out-dir compiled --presets=react --source-maps inline --watch & live-server",
+    "start": "nodemon server/server.js",
     "react-dev": "webpack -d --watch --display-error-details"
   },
   "dependencies": {
@@ -22,7 +22,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "nodemon": "^2.0.1",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "mongoose": "^5.8.0"
   },
   "devDependencies": {
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
