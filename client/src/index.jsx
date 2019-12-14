@@ -21,26 +21,47 @@ class Cart extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:3070/dummy')
-            .then( (data) => {
+        axios.get('http://buyboxapi.us-west-2.elasticbeanstalk.com/allProducts')
+            .then((data) => {
                 console.log(data.data);
                 this.setState({
-                    allProducts: data.data,
-                    currentProduct: data.data[2],
+                    allProducts: data.data
                 });
             })
-            .then( () => {
+            .then(() => {
+                this.getId();
+            })
+            .then(() => {
                 this.populateQuantity();
             })
-            .catch( err => {
+            .catch(err => {
                 console.error(err);
             })
     }
 
-    populateQuantity(){
+    getId() {
+        let idText = window.location.search;
+        let croppedId = idText.substring((idText.indexOf('=') + 1));
+
+        croppedId = Number(croppedId);
+
+        if (this.state.allProducts === {}) {
+            return null;
+        } else {
+            this.state.allProducts.forEach(e => {
+                if (e.primaryKey === croppedId) {
+                    this.setState({
+                        currentProduct: e
+                    })
+                }
+            })
+        }
+    }
+
+    populateQuantity() {
         let sel = document.getElementById('quantity-selector');
         let opt = null;
-        for(let i = 2; i < this.state.currentProduct.stock + 1; i++){
+        for (let i = 2; i < this.state.currentProduct.stock + 1; i++) {
             opt = document.createElement('option');
             opt.value = `${i}`;
             opt.innerHTML = `${i}`;
