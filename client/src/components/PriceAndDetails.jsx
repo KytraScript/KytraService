@@ -93,11 +93,14 @@ const PriceAndDetails = (props) => {
             <div className={'pricing-details'}>
                 <div className={'protection-plan'}><b>Add a Protection Plan</b>
                     <br/>
+                    <input type="radio" id="select-none" name="protection"/>
+                    <label htmlFor="protection"> None</label>
+                    <br/>
                     <input type="radio" id="two-year" name="protection"/>
-                    <label htmlFor="protection">2-Year Protection for <span className={'red-K'}>$24.99</span></label>
+                    <label htmlFor="protection"> 2-Year Protection for <span className={'red-K'}>$24.99</span></label>
                     <br/>
                     <input type="radio" id="three-year" name="protection"/>
-                    <label htmlFor="protection">3-Year Protection for <span className={'red-K'}>$33.99</span></label>
+                    <label htmlFor="protection"> 3-Year Protection for <span className={'red-K'}>$33.99</span></label>
                 </div>
                 <br/>
                 <div>
@@ -107,7 +110,7 @@ const PriceAndDetails = (props) => {
                 <br/>
                 <div className={'deliver-to'}>
                     <div id={'deliver-map'}></div>
-                    <a href="#">Deliver to Round Rock 78681‌</a></div>
+                    <a href="#">Deliver to Austin 78703‌</a></div>
                 <br/>
             </div>
             <button id={'btn-wishlist'} className={'btn'}>Add to List</button>

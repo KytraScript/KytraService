@@ -13,9 +13,15 @@ class Cart extends React.Component {
         this.state = {
 
             allProducts: {},
-            currentProduct: {},
+            currentProduct: {
+                _id: "5dee77511c9d440000f1b68c",
+                primaryKey: 1,
+                name: "Nestle Pure Life Purified Water, 16.9 fl oz. Plastic Bottles (12 count)",
+                price: "2.23",
+                stock: 70
+            },
             stock: [],
-            otherSellers: sellers,
+            otherSellers: [],
 
         };
     }
@@ -32,11 +38,28 @@ class Cart extends React.Component {
                 this.getId();
             })
             .then(() => {
+                this.randomizeSellers();
+            })
+            .then(() => {
                 this.populateQuantity();
             })
             .catch(err => {
                 console.error(err);
             })
+    }
+
+    randomizeSellers() {
+        let moreSellers = [];
+        for (let i = 0; i < 3; i++) {
+            moreSellers.push(sellers[this.getRandomInt(15)]);
+        }
+        this.setState({
+            otherSellers: moreSellers
+        })
+    }
+
+    getRandomInt(num) {
+        return Math.floor(Math.random() * Math.floor(num));
     }
 
     getId() {
@@ -76,7 +99,7 @@ class Cart extends React.Component {
                     <PriceAndDetails current={this.state.currentProduct}/>
                 </div>
                 <Social/>
-                <OtherSellers sellers={this.state.otherSellers}/>
+                <OtherSellers shops={this.state.otherSellers} current={this.state.currentProduct}/>
             </div>
         );
     }
