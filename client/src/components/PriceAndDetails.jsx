@@ -30,8 +30,8 @@ const PriceAndDetails = (props) => {
                 <div id={'shipping-K'}>& <b>FREE Shipping</b> <a href='#'>Details</a></div>
                 <div id={'returns-K'}>& <a href='#'>FREE Returns</a></div>
                 <br/>
-                <div id={'shipping-details-K'}><b>Want it Thursday, Dec. 5?</b> Order within <span
-                    className={'green-K'}>11 hrs 39 mins</span> and
+                <div id={'shipping-details-K'}><b>Want it Wednesday, Dec. 18?</b> Order within <span
+                    className={'green-K'}>15 hrs 34 mins</span> and
                     choose <b>Two-Day Shipping</b> at checkout.
                     <br/><a href='#'>Details</a>
                 </div>
