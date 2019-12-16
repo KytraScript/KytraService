@@ -23,6 +23,13 @@ const PriceAndDetails = (props) => {
         }
     }
 
+    function addToCart() {
+        let quantityToAdd = document.getElementById('quantity-selector').value;
+        let currentStorage = localStorage.getItem("cVal");
+        let toStore = (Number(quantityToAdd) + Number(currentStorage));
+        localStorage.setItem("cVal", toStore.toString());
+    }
+
     return (
         <div className={'purchase-details-K'}>
             <div className={'pricing-details'}>
@@ -46,7 +53,7 @@ const PriceAndDetails = (props) => {
                 </div>
             </div>
             <br/>
-            <button id={'btn-add-cart'} className={'btn'}><span id={'cart-icon'}></span>Add to Cart<span></span></button>
+            <button id={'btn-add-cart'} className={'btn'} onClick={addToCart}><span id={'cart-icon'}></span>Add to Cart<span></span></button>
 
             <button id={'btn-buy-now'} className={'btn'}><span id={'buynow-icon'}></span>Buy Now<span></span></button>
             <br/>

@@ -105,4 +105,4 @@ class Cart extends React.Component {
     }
 }
 
-ReactDOM.render(<Cart/>, document.getElementById('cart'));
+ReactDOM.render(<Cart/>, document.getElementById('kytrabuybox'));
