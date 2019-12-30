@@ -1,9 +1,6 @@
 import React from 'react';
 
 const Social = () => {
-    //logic for Social
-    //social media icons are dumb.. there will be no logic here.
-    //we are just going to send them to the corresponding website.
 
     return (
         <div className={'social-media'}>

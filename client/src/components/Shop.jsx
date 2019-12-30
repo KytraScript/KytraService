@@ -2,8 +2,8 @@ import React from 'react';
 
 const Shop = (props) => {
 
-    let modPrice = (Number(props.price) * Math.random()) + Number(props.price);
-    modPrice = modPrice.toFixed(2);
+    let modPrice = (Number(props.price) * Math.random()) + Number(props.price);  //modify the actual Gammazon price
+    modPrice = modPrice.toFixed(2);                                 //for additional sellers
 
     return (
         <div className={'seller-K'}>
