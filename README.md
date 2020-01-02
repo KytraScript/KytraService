@@ -32,10 +32,14 @@ The API is currently still hosted and active as of January 2nd, 2020.]
 
 > After forking/cloning, navigate to the repository folder in your terminal and run:
 ``` npm install ```
+
 > Then to launch local server:
 ``` npm start ```
-> Then open your browser and navigate to localhost:3380
+
+> Then open your browser and navigate to localhost:3380.
+
 > To change the current product, change the product id attached to the localhost url:
 ``` localhost:3380/?id=55 ```
-> Product ID's range from 1 to 100
+
+> Product ID's range from 1 to 100.
 
