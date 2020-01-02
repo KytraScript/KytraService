@@ -22,7 +22,7 @@ Based on the current product ID in the URL, pricing and stock information is ren
 
 <img src="https://i.imgur.com/jPMCljo.png">
 
-Features additional seller information and social media sharing.
+Features additional seller information and capabilities to include social media sharing.
 
 <img src="https://media.giphy.com/media/fxTjV9Um5eZ5edn8wc/giphy.gif">
 
