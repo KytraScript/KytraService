@@ -28,7 +28,7 @@ Features additional seller information and social media sharing.
 
 Additionally features a Promo pop-over for advertising Amazon's Prime Service.
 
-The API is currently still hosted and active as of January 2nd, 2020.]
+The API is currently still hosted and active as of January 2nd, 2020.
 
 > After forking/cloning, navigate to the repository folder in your terminal and run:
 ``` npm install ```
